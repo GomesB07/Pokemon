@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/de005b27b6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div class="container">
+
+        <header>
+            <img src="./assets/gif-pokeball.gif" alt="">
+            <h1>PokeCards</h1> 
+        </header>
+
+        <div class="search">
+            <input type="text" id="input" placeholder="Enter Pokemon name or id">
+            <button id="button">Search</button>
+        </div>
+
+        <div class="container-card">
+            <div id="border-card">
+                <div class="card">
+
+                    <div class="name-type">
+                        <h2 id="name"></h2>
+                        <div class="hp-element">
+                            <p id="hp">- HP</p>
+                            <div id="element"></div>
+                        </div>
+
+                    </div>
+
+                    <div class="div-img-pokemon"><img id="pick" src="#" alt="Pokemon Image" style="display: none;"></div>
+                    <div class="height-weight-pokemon">
+                        <p id="height-pokemon">Weight:</p>
+                        <p id="weight-pokemon">Height:</p>
+                    </div>
+
+                    <div class="skills">
+                        <h2>Skills</h2>
+                        <div id="div-ability-1" >
+                            <h3 id="name-ability-1"></h3>
+                            <p id="ability1"></p>
+                        </div>
+                        
+                        <div id="div-ability-2" >
+                            <h3 id="name-ability-2"></h3>
+                            <p id="ability2"></p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container-all-pokemons">
+
+            <div class="all-pokemons">
+                <h2>All Pokemons</h2>
+                <p><span style="color: red;">•</span> Scroll to see more pokemons <span style="color: red;">•</span></p>
+                <p><span style="color: red;">•</span> Click on a Pokemon to display its information on the Card <span style="color: red;">•</span></p>
+                <div class="container-div-list"><div id="div-list"></div></div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>
